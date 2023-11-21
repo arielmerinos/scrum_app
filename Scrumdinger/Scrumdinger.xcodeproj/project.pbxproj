@@ -18,6 +18,7 @@
 		B07250942B094708002C9CEA /* LeadingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07250932B094708002C9CEA /* LeadingIconLabelStyle.swift */; };
 		B07250962B094B5E002C9CEA /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07250952B094B5E002C9CEA /* ScrumsView.swift */; };
 		B07250982B097B82002C9CEA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07250972B097B82002C9CEA /* DetailView.swift */; };
+		B072509A2B0BDBA7002C9CEA /* DetailedEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07250992B0BDBA7002C9CEA /* DetailedEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B07250932B094708002C9CEA /* LeadingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeadingIconLabelStyle.swift; path = ../../LeadingIconLabelStyle.swift; sourceTree = "<group>"; };
 		B07250952B094B5E002C9CEA /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrumsView.swift; path = ../../ScrumsView.swift; sourceTree = "<group>"; };
 		B07250972B097B82002C9CEA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = ../../DetailView.swift; sourceTree = "<group>"; };
+		B07250992B0BDBA7002C9CEA /* DetailedEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailedEditView.swift; path = ../../DetailedEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B072508B2B092351002C9CEA /* CardView.swift */,
 				B07250952B094B5E002C9CEA /* ScrumsView.swift */,
 				B07250972B097B82002C9CEA /* DetailView.swift */,
+				B07250992B0BDBA7002C9CEA /* DetailedEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				B07250962B094B5E002C9CEA /* ScrumsView.swift in Sources */,
 				B07250872B0877CF002C9CEA /* Theme.swift in Sources */,
 				B07250782B08647C002C9CEA /* ScrumdingerApp.swift in Sources */,
+				B072509A2B0BDBA7002C9CEA /* DetailedEditView.swift in Sources */,
 				B072508C2B092351002C9CEA /* CardView.swift in Sources */,
 				B07250922B09448F002C9CEA /* TrailingIconLabelStyle.swift in Sources */,
 			);

@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct DetailedEditView: View {
-    @State private var scrum = DailyScrum.emptyScrum
+    @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
+    
     
     var body: some View {
         Form{
@@ -46,11 +47,13 @@ struct DetailedEditView: View {
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
+                ThemePicker(selection: $scrum.theme)
             }
         }
+
     }
 }
 
 #Preview {
-    DetailedEditView()
+    DetailedEditView(scrum: .constant(DailyScrum.sampleData[0]))
 }

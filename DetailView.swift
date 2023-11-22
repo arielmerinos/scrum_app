@@ -48,8 +48,33 @@ struct DetailView: View {
         }
         .navigationTitle(scrum.title)
         .sheet(isPresented: $isPresentingEditView){
-            DetailedEditView()
+            NavigationStack{
+                DetailedEditView()
+                    .navigationTitle(scrum.title)
+                    .toolbar{
+                        ToolbarItem(placement: .cancellationAction){
+                            Button("Cancel"){
+                                isPresentingEditView = false
+                            }
+                        }
+                        
+                        ToolbarItem(placement: .confirmationAction){
+                            Button("Done"){
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
+            }
+            
         }
+        .toolbar{
+            Button{
+                isPresentingEditView = true
+            } label: {
+                Text("Edit")
+            }
+        }
+
     }
 }
 

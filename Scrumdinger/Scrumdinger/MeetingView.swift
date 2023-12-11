@@ -10,6 +10,7 @@ import SwiftUI
 struct MeetingView: View {
     @State private var secondsElapsed: Float = 0.0
     private let totalSeconds: Float = 122.3
+
     
     var body: some View {
         VStack{
@@ -19,7 +20,7 @@ struct MeetingView: View {
             HStack(spacing: 20){
                 Label("Time elapsed: \(Int(secondsElapsed))s", systemImage: "clock.fill")
                     .font(.caption)
-                    
+                
                 Spacer()
                 Label("Remaining time: \(Int(totalSeconds - secondsElapsed))s", systemImage: "clock")
                     .font(.caption)
@@ -50,7 +51,7 @@ struct MeetingView: View {
                 .padding()
                 .background(Color(.systemRed))
                 .clipShape(RoundedRectangle(cornerRadius: 8))
-
+                
                 
                 Button{
                     secondsElapsed = 122.3
@@ -63,7 +64,7 @@ struct MeetingView: View {
                 .padding()
                 .background(Color(.systemBlue))
                 .clipShape(RoundedRectangle(cornerRadius: 8))
-
+                
             }
             .padding(.top)
             .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -85,17 +86,24 @@ struct MeetingView: View {
                 .font(.custom("SF rounded", fixedSize: 16))
             Spacer()
             Button{
-                    
+                
             } label: {
-                    Image(systemName: "forward.fill")
+                Image(systemName: "forward.fill")
             }
             .accessibilityLabel("Next speaker")
-
+            
         }
         .padding(.horizontal)
+        
+        Grid {
+            ForEach(1..<5){
+                _ in Color.teal
+            }
+        }.padding(10)
+        
     }
 }
 
-#Preview {
+#Preview() {
     MeetingView()
 }
